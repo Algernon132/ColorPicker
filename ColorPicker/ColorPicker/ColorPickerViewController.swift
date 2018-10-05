@@ -10,25 +10,13 @@ import UIKit
 
 class ColorPickerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
+
     struct Colors{
         let colorName: String
         let UIVal: UIColor
     }
     
-    func createArray() -> [Colors]{
-        var colorsArray = [Colors]()
-        colorsArray.append (Colors(colorName: "Red" , UIVal: UIColor.red))
-        colorsArray.append (Colors(colorName: "Orange" , UIVal: UIColor.orange))
-        colorsArray.append (Colors(colorName: "Yellow" , UIVal: UIColor.yellow))
-        colorsArray.append (Colors(colorName: "Green" , UIVal: UIColor.green))
-        colorsArray.append (Colors(colorName: "Blue" , UIVal: UIColor.blue))
-        colorsArray.append (Colors(colorName: "Purple" , UIVal: UIColor.purple))
-        return colorsArray;
-    }
-    lazy var colorsArray = createArray();
-    /* When I tried to create colorsArray outside of a function, I got the "expected declaration" error. Creating the array inside of viewDidLoad would mean I couldn't access colorsArray.count for numberOfRowsInComponent. This feels like a sloppy way of doing this, please let me know if there's a better way.
-    */
-    
+    var colorsArray : [Colors] = [Colors]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +39,11 @@ class ColorPickerViewController: UIViewController, UIPickerViewDelegate, UIPicke
         return colorsArray.count
     }
     
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        self.view.backgroundColor = colorsArray[row].UIVal
+        return colorsArray[row].colorName
+
+    }
     
 
     /*
