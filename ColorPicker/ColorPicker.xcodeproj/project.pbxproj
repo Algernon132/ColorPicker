@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		6E12A66C2167EDE400A4941A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E12A66B2167EDE400A4941A /* AppDelegate.swift */; };
-		6E12A66E2167EDE400A4941A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E12A66D2167EDE400A4941A /* ViewController.swift */; };
 		6E12A6712167EDE400A4941A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E12A66F2167EDE400A4941A /* Main.storyboard */; };
 		6E12A6732167EDE600A4941A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E12A6722167EDE600A4941A /* Assets.xcassets */; };
 		6E12A6762167EDE600A4941A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E12A6742167EDE600A4941A /* LaunchScreen.storyboard */; };
+		6E12A67E2167EE3D00A4941A /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E12A67D2167EE3D00A4941A /* ColorPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6E12A6682167EDE400A4941A /* ColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E12A66B2167EDE400A4941A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6E12A66D2167EDE400A4941A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6E12A6702167EDE400A4941A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E12A6722167EDE600A4941A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E12A6752167EDE600A4941A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E12A6772167EDE600A4941A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E12A67D2167EE3D00A4941A /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				6E12A66B2167EDE400A4941A /* AppDelegate.swift */,
-				6E12A66D2167EDE400A4941A /* ViewController.swift */,
 				6E12A66F2167EDE400A4941A /* Main.storyboard */,
 				6E12A6722167EDE600A4941A /* Assets.xcassets */,
 				6E12A6742167EDE600A4941A /* LaunchScreen.storyboard */,
 				6E12A6772167EDE600A4941A /* Info.plist */,
+				6E12A67D2167EE3D00A4941A /* ColorPickerViewController.swift */,
 			);
 			path = ColorPicker;
 			sourceTree = "<group>";
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E12A66E2167EDE400A4941A /* ViewController.swift in Sources */,
+				6E12A67E2167EE3D00A4941A /* ColorPickerViewController.swift in Sources */,
 				6E12A66C2167EDE400A4941A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
