@@ -9,7 +9,8 @@
 import UIKit
 
 class ColorPickerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-    
+    @IBOutlet var myPicker: UIPickerView!
+
 
     struct Colors{
         let colorName: String
@@ -28,6 +29,7 @@ class ColorPickerViewController: UIViewController, UIPickerViewDelegate, UIPicke
         colorsArray.append (Colors(colorName: "Blue" , UIVal: UIColor.blue))
         colorsArray.append (Colors(colorName: "Purple" , UIVal: UIColor.purple))
 
+        myPicker.selectRow(0,inComponent: 1 ,animated: true)
         // Do any additional setup after loading the view.
     }
     
