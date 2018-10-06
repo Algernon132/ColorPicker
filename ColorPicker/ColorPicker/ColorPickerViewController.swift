@@ -9,9 +9,10 @@
 import UIKit
 
 class ColorPickerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-    @IBOutlet var myPicker: UIPickerView!
+    @IBOutlet weak var myPicker: UIPickerView!
 
-
+    @IBOutlet weak var myLabel: UILabel!
+    
     struct Colors{
         let colorName: String
         let UIVal: UIColor
@@ -29,7 +30,7 @@ class ColorPickerViewController: UIViewController, UIPickerViewDelegate, UIPicke
         colorsArray.append (Colors(colorName: "Blue" , UIVal: UIColor.blue))
         colorsArray.append (Colors(colorName: "Purple" , UIVal: UIColor.purple))
 
-        myPicker.selectRow(0,inComponent: 1 ,animated: true)
+        //myPicker.selectRow(0,inComponent: 0 ,animated: true)
         // Do any additional setup after loading the view.
     }
     
@@ -47,6 +48,9 @@ class ColorPickerViewController: UIViewController, UIPickerViewDelegate, UIPicke
 
     }
     
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        myLabel.text = colorsArray[row].colorName
+    }
 
     /*
     // MARK: - Navigation
